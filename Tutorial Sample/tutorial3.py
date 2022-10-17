@@ -1,15 +1,26 @@
 from tkinter import *
-from PIL import Image, ImageTk
+from PIL import Image
 import os
 
 def import_photo():
     global var
     print("Importing Photo...")
-    #file = str(os.getcwd()) + var.get() + '.png'
-    file = 'C:\Users\YWFU\Documents\Github\EGL314starterkit\Tutorial Sample\' + var.get() + '.png'
-    print("Image is {}".format(file))
-    myImage = Image.open(file)
-    myImage.show()
+    
+    choice = var.get()
+
+    # if user did not input any text
+    if len(choice) == 0:
+        path = os.path.abspath('images') + '\\' + 'cat.png'
+        file = path.replace('\\','/')
+        myImage = Image.open(file)
+        myImage.show()
+    # if user input ball, cat or dog
+    else:
+        path = os.path.abspath('images') +'\\' + var.get() + '.png'
+        file = path.replace('\\','/')
+        print("file path is {}".format(file))
+        myImage = Image.open(file)
+        myImage.show()
 
 
 # Main GUI Windows

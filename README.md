@@ -99,6 +99,27 @@ Set the respective **R,G,B** buttons to dehalfault **Red, Green and Blue** colou
 Below is a sample of how the GUI will look like. <br> 
 ![](capture/tutorial2.png)
 
+### Tutorial 3: GUI to import photo preview (Installing new Python Library)
+Build a GUI to allow users to input a set of string
+1. cat
+2. dog
+3. beach 
+A photo preview window will apear when **import** button is pressed
+
+#### Hint
+1. You can attempt to install the **Python Image Processing (PILLOW)** library. 
+2. You might require the **Python OS** module.
+
+Below is a sample of how the GUI will look like. <br>
+![](capture/tutorial3.png)
+
+The program will output 3 sample previews (you can find these images in `~/EGL314starterkit/images/`)
+#### Dog
+![](images/dog.png)
+#### Cat
+![](images/cat.png)
+#### Ball
+![](images/ball.png)
 
 ### Final Challenge 
 For your final challenge, each group will develop and build a GUI with the following features.
