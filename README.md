@@ -78,3 +78,19 @@ sudo raspi-config
 Select `2 Display Options` <br>
 Select `04 Screen Blanking` <br>
 Select **Disable Screen Blanking**
+
+## Python Tkinter Tutorial
+This section will provide a series of mini-tutorials to help you get familiarze with Tkinter. Do note that that this section only cover the fundamental features of TKinter. Refer to
+https://www.tutorialspoint.com/python/python_gui_programming.htm for a more extensive list.
+
+To make the best of use of this section, please attempt the tutorial questions. If and only if you are stuck, refer to the tutorial sample for guidance. 
+### Tutorial 1: Creating a GUI with "RGB Buttons" windows
+Are you able to to create a GUI windows that consist of 3 buttons that will print out the following when pressed
+1. `Button Pressed is RED` - RED BUTTON
+2. `Button Pressed is BLUE` - BLUE BUTTON
+3. `Button Pressed is GREEN` - GREEN BUTTON
+
+Below is a sample of how the GUI will look like. 
+![](capture/tutorial1.png)
+
+### Tutorial 2: 
