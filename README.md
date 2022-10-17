@@ -106,7 +106,7 @@ Build a GUI to allow users to input a set of string
 3. beach 
 A photo preview window will apear when **import** button is pressed
 
-#### Hint
+#### **Hint**
 1. You can attempt to install the **Python Image Processing (PILLOW)** library. 
 2. You might require the **Python OS** module.
 
@@ -120,6 +120,8 @@ The program will output 3 sample previews (you can find these images in `~/EGL31
 ![](images/cat.png)
 #### Ball
 ![](images/ball.png)
+
+### Tutorial 4: Getting Familar with List
 
 ### Final Challenge 
 For your final challenge, each group will develop and build a GUI with the following features.
