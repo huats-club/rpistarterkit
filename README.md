@@ -94,6 +94,17 @@ Below is a sample of how the GUI will look like. <br>
 ![](capture/tutorial1.png)
 
 ### Tutorial 2: Changing Colours of the Buttons
-Set the respective **R,G,B** buttons to default **Red, Green and Blue** colours respectively. Then integrate a colour scale (minimally 5 colours) for users to **"customize"** colour choices for the button.
+Set the respective **R,G,B** buttons to dehalfault **Red, Green and Blue** colours respectively. Then integrate a colour scale (minimally 5 colours) for users to **"customize"** colour choices for the button.
 
 Below is a sample of how the GUI will look like. <br> 
+![](capture/tutorial2.png)
+
+
+### Final Challenge 
+For your final challenge, each group will develop and build a GUI with the following features.
+1. 3 x 3 grid that allows users to change colour values.
+2. A colour scale for users to select 8 different greyscaled colours. 
+3. 4 presets that change grid to **All White**, **All Black**, **X Pattern** and **Sequence**. 
+4. A enter button to send a 3 x 3 array value. 
+
+![](capture/finalchallenge.png)
