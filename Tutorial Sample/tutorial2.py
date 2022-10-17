@@ -7,17 +7,50 @@ def choose_colour(button_pressed):
     print("Colour choice is {}".format(colour))
 # Functions to print "Button Pressed" Results
 def red_pressed():
+    global colour
+    if colour == 0:
+        red.config(bg='red')
+    elif colour == 1:
+        red.config(bg='green')
+    elif colour == 2:
+        red.config(bg='blue')
+    elif colour == 3:
+        red.config(bg='gold')
+    else:
+        red.config(bg='orange') 
     print("Button Pressed is RED!")
 
 def green_pressed():
+    global colour
+    if colour == 0:
+        green.config(bg='red')
+    elif colour == 1:
+        green.config(bg='green')
+    elif colour == 2:
+        green.config(bg='blue')
+    elif colour == 3:
+        green.config(bg='gold')
+    else:
+        green.config(bg='orange') 
     print("Button Pressed is GREEN!")
 
 def blue_pressed():
+    global colour
+    if colour == 0:
+        blue.config(bg='red')
+    elif colour == 1:
+        blue.config(bg='green')
+    elif colour == 2:
+        blue.config(bg='blue')
+    elif colour == 3:
+        blue.config(bg='gold')
+    else:
+        blue.config(bg='orange') 
     print("Button Pressed is BLUE!")
 
 # Main GUI Windows
 main = Tk()
-main.title("Tutorial 1 Sample")
+main.title("Tutorial 2 Sample")
 
 # Label Widget
 header = Label(main, text="My Fantastic GUI!", font=(300))
