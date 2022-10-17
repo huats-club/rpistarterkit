@@ -5,6 +5,18 @@ This repository contains the resources needed to kick start your EGL314 journey.
 1. Single Board Computer: Raspberry Pi 4 Model B
 2. Operating System: Raspbian Buster Full 
 
+## System Diagram
+```mermaid
+graph TD;
+A[Laptop]-->B[VNC Viewer]
+B-->A
+A-->C[Putty-SSH / WinSCP - SCP]
+C-->A
+C-->D[Network Router]
+D-->E[Raspberry Pi]
+F[Keyboard / Mouse]-->E
+E-->G[HDMI Monitor]
+```
 ## Setting up the Raspberry Pi (first initial boot)
 1. **Secure Shell (SSH)** into **Raspberry Pi** using **Putty**.
 ```
@@ -41,4 +53,28 @@ Select `3 Interface Options` <br>
 Select `P3 VNC` <br>
 Select  **Enable VNC**
 
-### Enable HDMI 
+### Enable HDMI Hotplug
+By default, **VNC Viewer** will not work on a raspberry pi without any active HDMI connection onto a monitor. We can enable **hdmi_force_hotplug** to force a HDMI signal even without any active HDMI connection! 
+
+To **enable hdmi_force_hotplug**, type the following
+```
+sudo nano /boot/config.txt
+```
+Scroll to the bottom of the file and paste
+```
+hdmi_force_hotplug=1
+```
+Save and exit the nano file editor <br>
+`crtl + o` to write(save) the file <br>
+`crtl + x` to exit the editor
+
+### Disable Screen Blanking (Optional)
+This step prevents the display output from going to sleep (blank) from inactivities.
+
+To **disable** Screen Blanking, type the following
+```
+sudo raspi-config
+```
+Select `2 Display Options` <br>
+Select `04 Screen Blanking` <br>
+Select **Disable Screen Blanking**
