@@ -130,4 +130,8 @@ For your final challenge, each group will develop and build a GUI with the follo
 3. 4 presets that change grid to **All White**, **All Black**, **X Pattern** and **Sequence**. 
 4. A enter button to send a 3 x 3 array value. 
 
+#### **Hint**
+1. You can explore **Python List (or rather...List of List)** to build the 3x3 grid of buttons.
+2. To create a function to identify which button was pressed 
+
 ![](capture/finalchallenge.png)
