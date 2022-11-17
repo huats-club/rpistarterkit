@@ -29,6 +29,19 @@ Password: (student_defined)
 sudo apt update
 sudo apt upgrade 
 ```
+If **update** and **upgrade** is unsuccessful, try the following. Manually Set time.
+```
+sudo date -s 'YYYY-MM-DD HH:MM:SS'
+```
+Edit repository mirror to the following
+```
+sudo nano /etc/apt/sources.list
+```
+Comment the current repository mirror and add the following
+```
+deb http://mirror.nus.edu.sg/raspbian/raspbian buster main contrib non-free rpi
+```
+
 3. **Configure** Raspberry Pi
 ### Enabling SSH
 **SSH** is a network communication protocol that enables two computers to communicate and share data.
