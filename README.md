@@ -42,6 +42,8 @@ Comment the current repository mirror and add the following
 deb http://mirror.nus.edu.sg/raspbian/raspbian buster main contrib non-free rpi
 ```
 
+Update **Raspberry Pi**
+
 3. **Configure** Raspberry Pi
 ### Enabling SSH
 **SSH** is a network communication protocol that enables two computers to communicate and share data.
