@@ -78,6 +78,8 @@ sudo nano /boot/config.txt
 Scroll to the bottom of the file and paste
 ```
 hdmi_force_hotplug=1
+hdmi_group=2 # HDMI display group
+hdmi_mode=82 # 1900 x 1080 resolution
 ```
 Save and exit the nano file editor <br>
 `crtl + o` to write(save) the file <br>
