@@ -1,9 +1,18 @@
-# EGL314starterkit
+# rpistarterkit
 This repository contains the resources needed to kick start your EGL314 journey. Have fun and all the best! YWFU
 
 ## Hardware 
 1. Single Board Computer: Raspberry Pi 4 Model B
 2. Operating System: Raspbian Buster Full 
+
+## Software (Windows)
+1. SSH terminal (Putty)
+2. SCP FIle sharing client (WinSCP)
+3. Microsoft Visual Studio Code
+4. VNC Viewer
+5. Local IP/Port Scanner
+6. Github Desktop []
+6. Github Desktop [link](https://desktop.github.com/)
 
 ## System Diagram
 ```mermaid
