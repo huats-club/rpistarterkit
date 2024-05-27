@@ -37,22 +37,12 @@ Password: (student_defined)
 sudo apt update
 sudo apt upgrade 
 ```
-If **update** and **upgrade** is unsuccessful, try the following. Manually Set time.
+If **update** and **upgrade** is unsuccessful, try the following. Manually Set time, then **update** and **upgrade** Raspberry Pi again.
 ```
 sudo date -s 'YYYY-MM-DD HH:MM:SS'
 ```
-Edit repository mirror to the following
-```
-sudo nano /etc/apt/sources.list
-```
-Comment the current repository mirror and add the following
-```
-deb http://mirror.nus.edu.sg/raspbian/raspbian buster main contrib non-free rpi
-```
 
-Update **Raspberry Pi**
 
-3. **Configure** Raspberry Pi
 ### Enabling SSH
 **SSH** is a network communication protocol that enables two computers to communicate and share data.
 <br>
@@ -103,6 +93,20 @@ sudo raspi-config
 Select `2 Display Options` <br>
 Select `04 Screen Blanking` <br>
 Select **Disable Screen Blanking**
+
+### Configuring Static IP on Raspberry Pi
+
+The recommended method to configure the Raspberry Pi with a static IP address would be the following: 
+
+1. Identify the **MAC** address of Raspberry Pi through **network router**.
+2. Configure **DHCP Reservation** through **network router**.
+3. Restart DHCP services on Raspberry Pi to update IP configuration.
+    * For **Raspbian Bookworm**
+```
+sudo systemctl restart NetworkManager (for Raspbian Bookworm)
+
+sudo systemctl restart dhcpcd (for Raspbian Bullseye and below)
+```
 
 ## Python Tkinter Tutorial
 This section will provide a series of mini-tutorials to help you get familiarze with Tkinter. Do note that that this section only cover the fundamental features of TKinter. Refer to
